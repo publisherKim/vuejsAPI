@@ -1,2 +1,2 @@
 # vuejsAPI
-## api reference 
+## api reference 정리
