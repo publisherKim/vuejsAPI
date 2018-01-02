@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ol>
+    </div>
+    <script>
+        var app4 = new Vue({
+            el: '#app-4',
+            data: {
+                todos: [
+                    { text: 'JavaScript 배우기' },
+                    { text: 'Vue 배우기' },
+                    { text: '무언가 멋진 것을 만들기' }
+                ]
+            }
+        });
+        // directive v-for="dataProp" value in dataProp data의 값을 반복후 삽입함. 
+    </script>
+</body>
+</html>
